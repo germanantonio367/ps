@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="ConsultingAgencyPU" transaction-type="JTA">
+    <jta-data-source>jdbc/MySQL</jta-data-source>
+    <class>jpa.entities.Genero</class>
+    <class>jpa.entities.Address</class>
+    <class>jpa.entities.Billable</class>
+    <class>jpa.entities.Client</class>
+    <class>jpa.entities.Consultant</class>
+    <class>jpa.entities.ConsultantStatus</class>
+    <class>jpa.entities.Project</class>
+    <class>jpa.entities.Recruiter</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties/>
+  </persistence-unit>
+</persistence>
